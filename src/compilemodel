@@ -1,0 +1,5 @@
+#!/bin/bash
+wine ~/.wine/drive_c/steamcmd/steamapps/common/GarrysMod/bin/studiomdl.exe -nop4 citybus.qc
+
+rm -r /home/milou/.local/share/Steam/steamapps/common/GarrysMod/garrysmod/addons/citybus/models
+mv /home/milou/.local/share/Steam/steamapps/common/GarrysMod/garrysmod/models /home/milou/.local/share/Steam/steamapps/common/GarrysMod/garrysmod/addons/citybus/

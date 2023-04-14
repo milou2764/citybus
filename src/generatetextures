@@ -1,0 +1,18 @@
+#!/bin/bash
+mkdir -p ../materials/models/milou2764
+
+# exterior
+vtex2 convert -f dxt1 -o $(pwd)/../materials/models/milou2764/scanial94ub.vtf textures/bus_ScaniaL94UB_albedo_opacity.png
+vtex2 convert -f dxt1 -n -o $(pwd)/../materials/models/milou2764/scanial94ub_normal.vtf textures/bus_ScaniaL94UB_normal.png
+echo -n "vertexlitgeneric
+{
+    \$basetexture models/milou2764/scanial94ub
+    \$bumpmap models/milou2764/scanial94ub_normal
+}" > ../materials/models/milou2764/scanial94ub.vmt
+
+# interior
+vtex2 convert -f dxt1 -o $(pwd)/../materials/models/milou2764/scanial94ub_interior.vtf textures/bus_ScaniaL94UB_interior_albedo_opacity.png
+echo -n "vertexlitgeneric
+{
+    \$basetexture models/milou2764/scanial94ub_interior
+}" > ../materials/models/milou2764/scanial94ub_interior.vmt

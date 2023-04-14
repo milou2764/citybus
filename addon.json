@@ -1,0 +1,12 @@
+{
+	"title"		:	"city_bus",
+	"type"		:	"model",
+	"ignore"	:
+	[
+		"*.sh",
+		".git/*",
+		".gitignore",
+		"src/*",
+		"icon.jpg"
+	]
+}

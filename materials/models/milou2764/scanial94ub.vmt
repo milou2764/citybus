@@ -1,0 +1,5 @@
+vertexlitgeneric
+{
+    $basetexture models/milou2764/scanial94ub
+    $bumpmap models/milou2764/scanial94ub_normal
+}
